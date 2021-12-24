@@ -4,10 +4,6 @@ const port = 3000;
 
 app.use(express.static("public"))
 
-app.get("/", function (req, res) {
-  res.send("Hello world");
-});
-
 app.get("*", function (req, res) {
   res.status(404);
   res.send("404 | not found");
