@@ -2,18 +2,20 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+app.set("view engine", "hbs");
+
 app.use(express.static("public"))
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/public/index.html");
+  res.render("home");
 });
 
 app.get("/generic", function (req, res) {
-  res.sendFile(__dirname + "/public/generic.html");
+  res.render("generic");
 });
 
 app.get("/elements", function (req, res) {
-  res.sendFile(__dirname + "/public/elements.html");
+  res.render("elements");
 });
 
 app.get("*", function (req, res) {
