@@ -1,7 +1,7 @@
 {
   "name": "webserver_node",
   "version": "0.0.1",
-  "description": "Web server based on Nodejs.",
+  "description": "This is a basic web server based on Nodejs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
